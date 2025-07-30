@@ -1,0 +1,72 @@
+4.17.3 Display
+4.17.3.1 Hardware Requirements
+4.17.3.1.1 Size
+Quasar-5089 - Display Size
+Size: Device shall support a 4.7” display that is optimized for indoor and outdoor viewing.
+Shall Have, Req’t Team Approved, System Requirement
+4.17.3.1.2 Brightness
+Quasar-5091 - Display Brightness
+The device shall support displays that at capable of at least 600 NITS typical brightness. This is to be measured through the entire stackup including touch panel, bonding and cover glass. The actual brightness through the entire stackup shall be at least 580 NITS typical brightness.
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5092 - Default Display Brightness
+The default display brightness shall be consistent with the out-of-box brightness of devices with similar display and OS versions. For example, TC77 out of box default brightness. The final number shall be determined with a comparison of similar products in the same Zebra tier or competitors, and target battery life goals.
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5093 - Brightness Limit
+The device display brightness limit shall be software configurable allowing it to be set by an application or an EMM client.
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5094 - Display Brightness Uniformity
+The Device display shall ensure brightness uniformity to meet 85% +/-5%
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5095 - Display White Chromaticity
+White chromaticity of display shall follow standard CIE 1931, (x,y)=(0.31,0.32) within +/-0.02 tolerance
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5096 - Display Color Saturation
+The display NTSC shall be > 60% (w/ a-si TFT technology) or >70% (w/ LTPS TFT technology)
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5097 - Display Visual Function Check
+The display shall not have any visual function problem such as screen flicking or cross-talk in any use cases or content.
+Shall Have, Req’t Team Approved, System Requirement
+4.17.3.1.4 Bit depth
+Quasar-5101 - Bit depth
+Bit depth: Device shall support minimum 16.7M colors (means 24 bits for pixel).
+Shall Have, Req’t Team Approved, System Requirement
+4.17.3.1.5 Display Life
+Quasar-5103 - Display Life
+The LED of the display shall have a half-life (half-life definition: brightness reduced to 50%) of at least 13,000 hours.
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5104 - The display when installed in the terminal shall pass Solar radiation Per EN/IEC…
+The display when installed in the terminal shall pass Solar radiation Per EN/IEC 60068-2-5: 2018 solar radiation spectral energy distribution, 1090 W/m2 at display surface Environmental temperature: 40°C. Irradiation duration: 24 hours
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5106 - Display Refresh Rate (normal condition)
+The display shall be designed to support at least 1280x720 resolution refreshing at 60 frames per second minimum.
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5107 - Graphics Accelerator / controller - 3D, overlays
+The display shall support for graphics accelerator / controller - 3D, overlays, etc.
+Shall Have, Req’t Team Approved, System Requirement
+4.17.3.1.6 Contrast Ratio
+Quasar-5109 - Contrast Ratio
+Contrast Ratio: Contrast Ratio of the display shall be >= 800:1 typical for all SKUs.
+Shall Have, Req’t Team Approved, System Requirement
+4.17.3.1.7 Viewing Angle:
+Quasar-5111 - Viewing Angle
+Viewing Angle: The viewing angle of the display shall be near +/-80 degrees with contrast ratio >= 10
+Shall Have, Req’t Team Approved, System Requirement
+4.17.3.1.8 Readability in Sunlight
+Quasar-5113 - Readability in Sunlight
+Readability in Sunlight: Device terminal display shall be readable outdoors in direct sunlight at 20,000 lux when at full backlight. Measured with the complete terminal stack up (touch panel, adhesive, display, etc) in place.
+Note that readable means:
+• Being able to identify all built-in application icons with default (wallpaper) settings
+• Be able to read a full screen of 10 point New Times Roman font text, black text on a white background.
+Shall Have, Req’t Team Approved, System Requirement
+4.17.3.1.9 Freezer Operation
+Quasar-5115 - Display and Touch Screen Functionality
+Display and Touch Screen Functionality
+The display and touch panel shall stay operation down to -20˚C (min. 4 hours) for base SKU and down to -30˚C for premium SKU. This includes rapid transitions between the loading dock (+5˚C, 60% R.H) and the freezer storage for premium SKU (-30˚C, N/A% R.H). There shall be no visual obstruction (internal fogging) between the touch panel and the display, after multiple transitions, that could prevent the user from seeing the content on the display.
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5116 - Freezer Operation: Electrical Components
+All electrical components selected for the DEVICE design shall have a minimum operating temperature of -30˚C and a storage temperature of -40˚C. This includes the freezer variant Lithium-Ion battery pack.
+Shall Have, Req’t Team Approved, System Requirement
+Quasar-5117 - Material Compatibility
+All materials used in the DEVICE design shall be compatible to an operating temperature of -30˚C and a storage temperature of -40˚C.
+Shall Have, Req’t Team Approved, System Requirement
+
