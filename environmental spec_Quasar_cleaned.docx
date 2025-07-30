@@ -1,0 +1,505 @@
+  4.5 Environmental Performance Specifications
+  4.5.1 Group A Tests (Limited Life Cycle)
+  Quasar-175 - Thermal Shock
+Thermal Shock
+
+Each project will CUSTOMIZE this requirement to be in sync with the system requirements stated elsewhere in this PRD.
+
+Ref	Environment	Environmental Category	Requirements
+1	Thermal Shock
+MIL-STD-810G Method 503.5, Procedure I	Product Specific	1. Tmax (+70°C), 75 mins, (Duration to allow for complete soak of device);
+2. Tmin (-40°C), 75 mins, (Duration to allow for complete soak of device);
+3. Switch time in 1 mins;
+4. Total 10 cycles.
+
+Transitions shall be one minute or less.    
+
+The unit shall be tested with the battery installed and device power off 
+
+PASS/FAIL Criteria:
+1.No mechanical failures
+2.No mechanical function degradation is allowed
+3.No electrical function degradation is allowed
+
+This is the preconditioning thermal shock for all environmental testing
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-176 - Vibration
+Vibration
+
+Each project will CUSTOMIZE this requirement to be in sync with the system requirements stated elsewhere in this PRD.
+Ref	Environment	Environmental Category	Requirements
+2	Vibration,
+MIL-STD-810G Method 514.6, Procedure I	Product Specific	Units for this test shall go through "Thermal shock" as a precondition test
+
+Sine:
+•	Sine 4 g's peak, 5hz to 2khz, 1 hour duration per axis.
+Random:
+•	0.04 g²/hz or 6g RMS, 20hz to 2khz, utilize industrial PSD specified in SS-03800-74
+•	1 hour duration per axis.
+
+
+Notes:  
+Device is to be hard mounted and powered on during vibration.
+No functional test during vibration.
+The Device is to meet specifications AFTER vibration
+The unit is to be tested with the battery, and energized and operating. 
+Acceptance Criteria: 
+•	Resets, reboots, loss of communication and enter / exit SLEEP are acceptable; but full functionality must be achieve upon reboot and end of test
+•	Battery door ejection is not acceptable
+•	All port covers (USB and audio) are to be fully inserted before each test.
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-177 - Operating Temp/Hum Cycling
+Operating Temp/Hum Cycling
+Ref	Environment	Environmental Category	Requirements
+3	Operating Temp/
+Hum Cycling
+MIL STD 810G
+Method 520.3	Product Specific	Units for this test shall go through "Thermal shock" as a precondition test
+
+Premium SKU -30°C to +50°C
+(RH 5% to 95% Non-condensing)
+
+Base SKU -20°C to +50°C
+(RH 5% to 95% Non-condensing)
+
+15 cycles (240 hours total).
+1 cycle = (16 hours)
+
+Note: The unit is to be tested with the battery and energized and operating. 
+Acceptance Criteria: 
+•	The unit shall not be damaged, have a loss of performance, cold boot, or the battery eject from the unit when the test is performed.
+ Shall Have,  Project Team Review,  System Requirement
+  Quasar-178 - Humidity Heat Test
+Humidity Heat Test
++50°C/95%RH, 10 days
+Acceptance Criteria
+1.No mechanical failures
+2.No mechanical function degradation is allowed
+3.No electrical function degradation is allowed
+
+Units for this test shall go through "Thermal shock" as a precondition test
+
+
+ Will not Have,  Rejected,  System Requirement
+  Quasar-179 - ESD
+ESD
+Ref	Environment	Environmental Category	Requirements
+4	ESD
+EN61000-4-2	Industrial	+/- 20 kV Air Discharge
++/-10 kV contact discharge
++/-10 kV Indirect discharge, per EN61000-4-2
+
+The unit must maintain a USB connection to a PC up
+to the regulatory levels of ±8kV Air, ±4 kV Contact.
+
+At levels greater than ±8 kV Air, ±4 kV Contact, the
+USB connection may be interrupted by an ESD event
+but must be reestablished by reinserting the unit into
+the cradle or other USB adapter
+
+Acceptance Criteria:  
+The DUT shall meet Performance Criteria A or B.
+
+Note:  Performance Criteria B can be deemed acceptable at Zebra’s discretion on a case-by-case basis.
+
+ESD Test on device shall be performed - "Test to Failure"
+ Shall Have,  Req't Team Approved,  System Requirement
+  4.5.2 Group B Tests (Temp / Humidity)
+  Quasar-181 - Shipment and Storage Low Temp
+Shipment and Storage Low Temp
+Ref	Environment	Environmental Category	Requirements
+1	Shipment and
+Storage Low Temp
+MIL STD 810G
+Methods 502.5 Procedure I 	Industrial	Units for this test shall go through "Thermal shock" as a precondition test
+
+Tmin (-40°C), 24hrs
+Power off during test
+
+Acceptance Criteria
+1.No mechanical failures
+2.No mechanical function degradation is allowed 3.No electrical function degradation is allowed
+
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-182 - Shipment and Storage High Temp
+Shipment and Storage High Temp
+Ref	Environment	Environmental Category	Requirements
+2	Shipment and
+Storage High Temp
+MIL STD 810G
+Methods 501.5 Procedure I	Industrial	Units for this test shall go through "Thermal shock" as a precondition test
+
+Tmax (70°C), 72 hrs
+Power off during test
+
+Acceptance Criteria
+1.No mechanical failures
+2.No mechanical function degradation is allowed
+3.No electrical function degradation is allowed
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-183 - Low Temp Functional Operating
+Low Temp Functional Operating 
+Ref	Environment	Environmental Category	Requirements
+3	Low Temp Functional Operating
+MIL STD 810 G	Industrial	Units for this test shall go through "Thermal shock" as a precondition test
+T-min (-20°C), 24hrs
+Power on idle mode during test
+
+Standard Devices (Base SKU):
+Testing is done at -20°C after soak time of minimum 2 hours. Unit shall be turned off during soak and then turned on before full functional testing.
+
+Freezer Devices (Premium SKU):
+Testing begins with -20°C soak, time of minimum 2 hours. Unit shall be turned off during soak.
+
+Unit is then turned on. 
+
+Then, the temperature is lowered to -30C (take 30mins to reach -30C from -20C soak) before full functional testing.  (Reason:  cold soak of -30C is not supported by this device)
+
+Acceptance Criteria
+1.No mechanical failures
+2.No mechanical function degradation is allowed
+3.No electrical function degradation is allowed
+ Shall Have,  Project Team Review,  System Requirement
+  Quasar-184 - High Temp Functional Operating
+High Temp Functional Operating 
+Ref	Environment	Environmental Category	Requirements
+4	High Temp Functional Operating
+MIL STD 810 G	Industrial	Units for this test shall go through "Thermal shock" as a precondition test
+
+T-max (+50°C), 24hrs
+Power on idle mode during test
+
+Testing is done at +50°C after soak time of minimum 2 hours. Unit shall be turned off during soak and then turned on before full functional testing
+
+Acceptance Criteria
+1.No mechanical failures
+2.No mechanical function degradation is allowed
+3.No electrical function degradation is allowed
+ Shall Have,  Req't Team Approved,  System Requirement
+  4.5.3 Group C Tests (Package, Handling, Transport)
+  Quasar-186 - Cargo / Packaged
+Cargo / Packaged - Accessory Item Support
+Ref	Environment	Environmental Category	Requirements
+1	Cargo / Packaged
+
+ASTM D4169 -09, ASTM D999-08 (MIL STD 810 alternate method 514, Proc II)
+	Industrial	Units for this test shall go through "Thermal shock" as a precondition test
+
+
+Acceptance Criteria:
+1.No appearance damage and function failure on device is allowed
+2.There must not be any critical damage for packaging as following.
+For packaging, the critical damage is defined as,
+- Any severe scratch, abrasion, distortion and tear of the cu box.
+- Box failed to be closed totally
+- Inability of the packaging to contain the parts in its intended position.
+For the purpose of the packaging is to absorb energy impacted by the environment to protect the product. Thus, some slight packaging damage is expected and acceptable.
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-187 - Altitude / Temp
+Altitude / Temp 
+
+Ref	Environment	Environmental Category	Requirements
+2	Altitude / Temp
+MIL STD 810G Method 500.5, Procedure I (Storage/Air Transport) and Procedure II 
+(Operating)
+
+Zebra Environmental Guidelines and Qualification Test Standard SS-03800-74 	Industrial	Units for this test shall go through "Thermal shock" as a precondition test
+
+Storage/Air Transport:
+15,000feet @ 12°C.
+
+The unit shall stay at altitude for at least one hour.
+The rate of altitude change shall not exceed 10 m/s.
+
+The unit shall be tested with the battery installed and  device power off.
+
+Operating:
+8000feet @ standard ambient.
+The unit shall stay at altitude until all operational checks have been performed.
+
+The rate of altitude change shall not exceed 10 m/s.
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-188 - Free-fall Tumble
+Free-fall Tumble
+Ref	Environment	Environmental Category	Requirements
+3	Free-fall Tumble/
+IEC 68-2-32	Product Specific	Quasar:
+Tumble : 1000 0.5 meter tumble hits minimum.
+(1 tumble= 1 hit)
+
+Acceptance criteria:
+There shall be no loss of performance.
+For Eng and QTP testing:
+The device shall prevent battery eject from the unit when the tumble test is performed.
+
+The device shall prevent lock up or corrupt data during tumble test.
+The device may enter connected standby mode during tumble test, but shall resume upon activity.
+
+It is acceptable to change battery every 250 tumbles.
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-189 - Drop / Shock
+
+Drop / Shock 
+Ref	Environment	Environmental Category	Requirements
+4	Drop / Shock
+
+MIL STD 810H
+Method 516.8,
+Procedure IV	Device is used in multiple categories.
+
+Retail, Warehouse, FM, T&L, and Healthcare	Units for this test shall go through "Thermal shock" as a precondition test.  3 units shall be used.
+
+
+Quasar:
+Base SKU Device with standard battery
+4 foot drop to Polished Concrete across operational temperature range from -20deg. C, +23deg. C, +50deg. C per MIL-STD 810H methods and procedures.
+Number of Drops: 26 drops (6 faces, 12 edges, and 8 corners)
+
+Premium SKU Device w/ cold battery
+4 foot drop to Polished Concrete across operational temperature range from -30deg. C, +23deg. C, +50deg. C per MIL-STD 810H methods and procedures.
+Number of Drops: 26 drops (6 faces, 12 edges, and 8 corners)
+
+Test will be using three units for each temperature measurement.
+Device is powered on.
+
+Acceptance Criteria:
+Eng and QTP testing:
+
+Device may enter connected standby
+during drop tests, but shall resume upon activation of power key.
+
+Battery pop-out, reboot chatter,
+and loss of data criteria as described
+in PRD section 4.3.6 and Quasar-87 Drop Test
+Conditions.
+
+ Shall Have,  Draft,  System Requirement
+  Quasar-190 - Drop / Shock - Zebra Drop (Hand release free fall)
+Drop / Shock 
+Ref	Environment	Environmental Category	Requirements
+5	Drop / Shock
+
+Zebra Drop
+(Hand release free fall)	Multiple categories.
+
+Retail, Warehouse, FM, T&L, Healthcare.	Unit for this test shall go through "Thermal shock" as a precondition test
+
+Quasar:
+
+Base SKU Device with standard battery
+4 foot drop to Concrete across operational temperature range from -20deg. C, 23deg. C, +50deg. C per MIL-STD 810H methods and procedures.
+
+Premium SKU Device with cold battery
+4 foot drop to Concrete across operational temperature range from -30deg. C, 23deg. C, +50deg. C per MIL-STD 810H methods and procedures.
+
+Number of Drops: 36 drops (6 drops x 6 sides)
+
+Test will be using three units for each temperature measurement.
+Device is powered on.
+
+Acceptance Criteria:
+Eng and QTP testing:
+
+Device may enter connected standby during drop tests, but shall resume upon activation of power key.
+
+Battery pop-out, reboot chatter, and loss of data criteria as described in PRD section 4.3.6 and Quasar 87 Drop Test Conditions.
+
+ Shall Have,  Req't Team Approved,  System Requirement
+  4.5.4 Group D Tests (EMI, Electromagnetic, Environment)
+  Quasar-192 - The following items are tested as a system (device and accessories):
+The following items are tested as a system (Device and accessories): Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-193 - Power Sags and Interruptions
+Note that Quasar is a DC powered product.
+
+Power Sags and Interruptions 
+Ref	Environment	Environmental Category	Requirements
+1	Power Sags and
+Interruptions
+EN61000-4-11
+(Mandated by
+Regulatory)	Industrial	DC Power Inputs 
+50 ms 100%
+Interrupt, Performance upset allowed, self-resettable
+100 ms 50% Sag,
+Performance upset allowed, self-resettable
+AC Power Inputs 
+10 ms 30% Sag,
+No Performance upsets allowed
+20 ms 100% Interrupt,
+No performance upsets allowed
+100 ms 50% Sag.
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-194 - Conducted Immunity
+Conducted Immunity 
+Ref	Environment	Environmental Category	Requirements
+2	Conducted
+Immunity
+EN61000-4-6
+(Mandated by
+Regulatory)	Industrial	DC, AC, I/O Cables
+(Common mode)
+10 V rms (150K - 80MHz) AM
+Modulated 80% 1KHz.
+ Shall Have,  Req't Team Approved,  System Requirement
+ ￼   
+Ref	Environment	Environmental Category	Requirements
+4	Electrical Fast
+Transient Burst
+EN61000-4-4	Industrial	Data I/O Lines ±1000 V
+Common Mode
+No performance upsets
+AC Input ±2000 V
+Differential and Common Mode
+No performance upset
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-197 - Radiated Immunity (RFI)
+Radiated Immunity (RFI) 
+Ref	Environment	Environmental Category	Requirements
+5	Radiated Immunity (RFI)
+EN61000-4-3	Industrial	EN61000-4-3: Test to 10  V/m with 80% modulated signal;  extended frequency range to cover 80 Mhz - 2.7 Ghz
+ Shall Have,  Req't Team Approved,  System Requirement
+ ￼  System Requirement
+Ref	Environment	Environmental Category	Requirements
+7	Conducted and Radiated Emissions	Industrial	FCC Class B Product
+CISPR32 Class B
+ Shall Have,  Req't Team Approved,  System Requirement
+  4.5.5 Group E Tests (Unique Environments, Product Application)
+  Quasar-201 - Serialized IP applicability
+
+The Device shall undergo the Serialized IP Test (also known as Durable IP) - (Doc 00-M911-TP01) the target is to meet IPX5 after the dynamic tests. Note: This is an engineering level test only, that tests the seal of the product after a series of mechanical tests like drop and tumble. This should be applied to all terminals (including VCs and handhelds). At this time we are not applying to any of the accessories, but could if we wanted to in the future.
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-202 - Dust/Water
+Dust/Water 
+Ref	Environment	Environmental Category	Requirements
+1	Dust/Water
+IEC 60529
+	Industrial	Unit for this test shall go through "Thermal shock" as precondition (except IP67)
+
+Tested to both IP65 and IP67 (1.0m, 30 min)
+Category 2 in accordance with IEC 529, Degrees of Protection Provided by Enclosures.
+
+The battery shall be inserted in the terminal for this test.
+
+IP54 without the battery installed.
+
+3 sample each for for IP6X and IPX5 and IPX7
+
+Pass/Fail Criteria
+Moisture Ingress IPX5, IPX7
+1.No electrical function degradation is allowed.
+2.No water inside the Product is allowed. 
+
+Dust Ingress  IP6X
+1.No electrical function degradation is allowed.
+2.No dust ingress is allowed transparent position (e.g. display, camera lens inside) is allowed
+ Shall Have,  Req't Team Approved,  System Requirement
+  System Requirement
+Ref	Environment	Environmental Category	Requirements
+6	Light Immunity/	Industrial	Product Performance to include LCD Readability
+Incandescent: 450 ft candles
+Sunlight: 8000 ft candles
+Fluorescent: 450 ft candles
+Mercury Vapor: 450 ft candles
+Sodium Vapor: 450 ft candles
+ROHM LED (white) 1350 ft candle
+
+
+*These are to be validated on a unit that has 100% camera tuning completed Shall Have,  Project Team Review,  System Requirement
+  Quasar-209 - Solar (Sunshine)
+Solar (Sunshine) 
+Ref	Environment	Environmental Category	Requirements
+7	Solar Radiation
+IEC 60068-2-5 proc. A	Industrial
+Temperature 40°C	Unit for this test shall go through "Thermal shock" as a precondition.
+
+Solar Radiation  IEC 60068-2-5 : 2018 proc. A
+
+1120 watt/m2 UV spectral 250 - 400nm; Simulated solar radiation Surface degradation in-accordance-with IEC 60068-2-5 : 2018 proc. A .  All the spectrum distribution specified in IEC.  3 cycles of 24 hours, 40°C, 3 days.
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-210 - Chemical Resistance
+Chemical Resistance 
+Ref	Environment	Environmental Category	Requirements
+8	Chemical
+Resistance	Industrial	•	Hand lotions (Lubriderm)
+•	Anti bacterial soap
+•	Sweat (fake)
+•	Dish washing soap (Dawn)
+•	409 general purpose cleaner
+•	Detergent (Woolite)
+•	Oleic acid (90% pure)
+•	Hair Gel (TRESemme)
+•	Hand sanitizer
+•	409 Glass and Surface cleaner
+•	Windex blue
+
+PASS/FAIL criteria:
+No Discoloration, Pitting, De-lamination, Degradation of performance, distortion, warping, cracking, paint bubbling, label peeling or other cosmetic issues
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-211 - HealthCare Chemical Agents
+This table is CUSTOMIZED for each project.
+
+REWORDING REVIEW
+
+The device shall be resistant to the following chemical agents with no occurrence of discoloration, pitting, de-lamination, degradation of performance, distortion, warping, cracking, paint bubbling, label peeling or other cosmetic issues….”.
+Complete List of Approved Cleaning and Disinfection Agents for All Zebra Healthcare Mobile Computers
+0.5-3.0% Hydrogen Peroxide solution	Medipal Alcohol Wipes
+10:1 Diluted 5.5% Sodium Hypochlorite solution	Metrex CaviWipes
+91% Isopropyl Alcohol solution	Metrex CaviWipes1
+Azowipe	PDI Easy Screen Cleaning Wipes
+Brulin BruTab 6S Tablets	PDI Sani-Cloth AF3 Germicidal Disposable Wipe
+Clinell Universal Sanitizing Wipes	PDI Sani-Cloth Bleach Germicidal Disposable Wipe
+Clorox Dispatch Hospital Cleaner Disinfectant Towels with Bleach	PDI Sani-Cloth HB Germicidal Disposable Wipe
+Clorox Formula 409 Glass and Surface Cleaner	PDI Sani-Cloth Plus Germicidal Disposable Plus
+Clorox Healthcare Bleach Germicidal Wipes	PDI Super Sani-Cloth Germicidal Wipe
+Clorox Healthcare Hydrogen Peroxide Wipes	Progressive Products Wipes Plus
+Clorox Healthcare Multi-Surface Quat Alcohol Wipes	Sani Professional Disinfecting Multi-Surface Wipes
+Diversey D10 Concentrate Detergent Sanitizer	Sani-Hands Instant Hand Sanitizing Wipes
+Diversey Dimension 256 Neutral Disinfectant Cleaner	SC Johnson Windex Original Glass Cleaner with Ammonia-D
+Diversey Oxivir Tb Wipes	Spartan Hepacide Quat II
+Diversey Virex II 256 One-Step Disinfectant Cleaner	Sterets Alcowipe
+Metrex CaviCide	Steris Coverage Plus Germicidal Surface Wipes
+Metrex CaviCide1	Veridien Viraguard
+ Shall Have,  Rejected,  System Requirement
+ ￼  System Requirement
+Ref	Environment	Environmental Category	Requirements
+10	UV Exposure	All - Product Specific	UV aging (solar radiation)
+The device shall be compliant with the MIL-STD 810H spectral power distribution levels in-accordance-with Method 505.5 Procecedure II:
+•UV-B:  Irradiance intensity is 5.6 W/m2 from 280-320nm
+•UV-A:  Irradiance intensity is 62.7 W/m2 from 320-400nm
+•Viible:  Irradiance intensity is 580.2 W/m2 over 400-800 nm
+•Infrared: Irradiance intensity is 471.5 W/m2 over 800-3000nm
+Acceptance Criteria:
+1.No concern on cosmetic aspects
+2.No electrical function degradation is allowed
+3.No mechanical function degradation is allowed
+Performing a drop test after UV aging test along with the Pass/Fail criteria that no mechanical and eclectrical failure is observed when the device is turned on.
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-214 - Flammability
+Flammability shall conform to the table below 
+Ref	Environment	Environmental Category	Requirements
+11	Flammability
+UL94V1		N/A
+ Shall Have,  Req't Team Approved,  System Requirement
+  Quasar-215 - Touch Hardness
+Touch Hardness 
+Ref	Environment	Environmental Category	Requirements
+12	Touch Hardness		PENCIL HARDNESS:
+TEST CONDITION: PENCIL, COVER GLASS 750G
+TEST SPEC.: >7 H
+ Shall Have,  Req't Team Approved,  System Requirement
+
+
+
+  Quasar-216 - Ball Drop
+Ball Drop
+Ref	Environment	Environmental Category	Requirements
+13	Ball Drop/Impact Test		Unit for this test shall go through "Thermal shock" as a precondition.
+
+The device surface shall be free from damage when a 31.75 mm diameter steel ball (130 grams) is dropped onto the center of touch panel from a starting height of 60 cm three times (B10).  
+
+Pass/Fail Criteria:
+1.The TP&LCD must not be cracked and can work properly.
+2. Pressing mark or white spot in display is acceptable.
+ Shall Have,  Req't Team Approved,  System Requirement
+ 
+
